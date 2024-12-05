@@ -9,7 +9,7 @@ function Header() {
     };
 
     return (
-        <div className="flex justify-around items-center p-10 font-regular">
+        <div className="flex justify-around items-center p-10 font-regular mx-0">
             <img src={FitCal} alt="" className="max-w-32" />
 
             <div>
@@ -37,8 +37,6 @@ function Header() {
                             <li className="p-2 hover:bg-gray-200 cursor-pointer">Seção 2</li>
                         </ul>
                     </li>
-
-                    <li><a href="https://www.globo.com/">Blog</a></li>
                 </ul>
             </div>
 

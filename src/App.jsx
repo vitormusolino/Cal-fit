@@ -10,13 +10,17 @@ function App() {
 
 
   return (
-    <>
-      <Header/>
-      <ControleCal/>
-      <InfoPessoas/>
-      <ComoFunciona/>
-      <Precisao/>
-      <DownloadApp/>
+        <>
+      <Header />
+      <ControleCal />
+      <InfoPessoas />
+      <div id="como-funciona">
+        <ComoFunciona />
+      </div>
+      <div id="precisao">
+        <Precisao />
+      </div>
+      <DownloadApp />
     </>
   )
 }

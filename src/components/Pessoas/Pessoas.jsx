@@ -3,8 +3,18 @@ function Pessoas({ InfoPessoas }) {
         <>
             {
                 InfoPessoas.map(card => (
-                    <a href={card.link} key={card.link} className="flex justify-center">
-                        <img src={card.foto} alt="" className="max-w-[60px] sm:max-w-[60px] md:max-w-[80px] lg:max-w-[100px]" />
+                    <a 
+                        href={card.link} 
+                        key={card.link} 
+                        className="flex justify-center" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        <img 
+                            src={card.foto} 
+                            alt="" 
+                            className="max-w-[60px] sm:max-w-[60px] md:max-w-[80px] lg:max-w-[100px]" 
+                        />
                     </a>
                 ))
             }

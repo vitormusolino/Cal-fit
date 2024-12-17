@@ -5,7 +5,7 @@ import ImgCelulares from '../../assets/ImgCelulares.png'
 function ControleCal() {
     return ( 
         <>
-            <div className='flex flex-col lg:flex-row py-10 px-5 lg:mx-72 justify-around items-center gap-10'>
+            <div className='container mx-auto px-7 lg:px-5 lg:max-w-[1270px] lg:mx-auto lg:py-10 flex flex-col lg:flex-row justify-around items-center gap-10'>
                 <div className='text-center lg:text-left'>
                     <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-5'>Controle suas calorias com somente uma foto!</h1>
                     <p className='text-base sm:text-lg lg:text-xl text-cinza-texto font-medium mb-5'>

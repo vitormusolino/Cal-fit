@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link"; 
 import FitCal from "../../assets/FitCal.svg";
 
 function Header() {
@@ -15,12 +17,11 @@ function Header() {
 
     return (
         <header className="p-10">
-            {/* Container Flexível */}
             <div className="flex justify-between items-center max-w-7xl mx-auto">
-                {/* Logo */}
-                <img src={FitCal} alt="FitCal Logo" className="max-w-24 md:max-w-32" />
+                <Link to="/">
+                    <img src={FitCal} alt="FitCal Logo" className="max-w-24 md:max-w-32" />
+                </Link>
 
-                {/* Menu Desktop Centralizado */}
                 <div className="hidden md:flex justify-center flex-1">
                     <nav>
                         <ul className="flex gap-10">
@@ -40,26 +41,30 @@ function Header() {
                                 </span>
                                 <ul
                                     className={`absolute left-0 top-full bg-white shadow-lg border rounded-lg mt-1 w-48 transition-opacity duration-200 ${
-                                        isDropdownVisible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                                        isDropdownVisible
+                                            ? "opacity-100 pointer-events-auto"
+                                            : "opacity-0 pointer-events-none"
                                     }`}
                                 >
                                     <li className="p-2 hover:bg-gray-200 cursor-pointer">
-                                        <a
-                                            href="#como-funciona"
+                                        <HashLink
+                                            to="/#como-funciona"
+                                            smooth
                                             className="block w-full h-full"
                                             onClick={() => setIsDropdownVisible(false)}
                                         >
                                             Como o Fit Cal funciona?
-                                        </a>
+                                        </HashLink>
                                     </li>
                                     <li className="p-2 hover:bg-gray-200 cursor-pointer">
-                                        <a
-                                            href="#precisao"
+                                        <HashLink
+                                            to="/#precisao"
+                                            smooth
                                             className="block w-full h-full"
                                             onClick={() => setIsDropdownVisible(false)}
                                         >
                                             O quão preciso é o Fit Cal?
-                                        </a>
+                                        </HashLink>
                                     </li>
                                 </ul>
                             </li>
@@ -67,7 +72,6 @@ function Header() {
                     </nav>
                 </div>
 
-                {/* Botão do Menu Hambúrguer */}
                 <button
                     className="md:hidden text-black focus:outline-none"
                     onClick={toggleMobileMenu}
@@ -75,15 +79,16 @@ function Header() {
                     {isMobileMenuOpen ? "✖" : "☰"}
                 </button>
 
-                {/* Botão Download (mantido à direita) */}
                 <div className="hidden md:block">
-                    <a href="" className="text-white bg-black py-3 px-7 rounded-sm font-semibold ">
+                    <a
+                        href="#"
+                        className="text-white bg-black py-3 px-7 rounded-sm font-semibold"
+                    >
                         Download
                     </a>
                 </div>
             </div>
 
-            {/* Menu Mobile */}
             <nav
                 className={`md:hidden bg-white shadow-md transition-transform duration-300 ${
                     isMobileMenuOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
@@ -91,26 +96,28 @@ function Header() {
             >
                 <ul className="flex flex-col mt-5 items-center space-y-4 py-4 gap-5">
                     <li>
-                        <a
-                            href="#como-funciona"
+                        <HashLink
+                            to="/#como-funciona"
+                            smooth
                             className="text-black hover:text-gray-700"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             Como o Fit Cal funciona?
-                        </a>
+                        </HashLink>
                     </li>
                     <li>
-                        <a
-                            href="#precisao"
+                        <HashLink
+                            to="/#precisao"
+                            smooth
                             className="text-black hover:text-gray-700"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             O quão preciso é o Fit Cal?
-                        </a>
+                        </HashLink>
                     </li>
                     <li>
                         <a
-                            href=""
+                            href="#"
                             className="text-white bg-black py-3 px-7 rounded-sm font-semibold"
                         >
                             Download

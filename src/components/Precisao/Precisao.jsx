@@ -5,7 +5,6 @@ function Precisao() {
         <>
             <div className="bg-cinza-escuro-bg py-14 px-5 md:px-10 m-12 lg:mx-72 rounded-lg">
                 <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-around gap-10">
-                    {/* Texto */}
                     <div className="flex flex-col text-center lg:text-left self-center">
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 lg:mb-10">
                             O quão preciso é o Fit Cal?
@@ -15,7 +14,6 @@ function Precisao() {
                         </p>
                     </div>
 
-                    {/* Imagem */}
                     <img
                         src={ImgGrafico}
                         alt="Gráfico explicando a precisão do Fit Cal"

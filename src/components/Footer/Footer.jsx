@@ -15,7 +15,7 @@ function Footer() {
                     <p className='text-center text-sm text-slate-500 mt-3'>Contato:</p>
                     <div className='flex justify-center mt-2'>
                             <a href="mailto:suporte@fitcal.app" className='text-center text-xs text-slate-500 mx-2 hover:underline'> fittcalapp@gmail.com </a>
-                            <a  href="tel:+5511968533521" className='text-center text-xs text-slate-500 mx-2 hover:underline'> +55 11 96853-3521</a>
+                            <a  href="" className='text-center text-xs text-slate-500 mx-2 hover:underline'> +55 11 96853-3521</a>
                     </div>
                 </div>
             </footer>

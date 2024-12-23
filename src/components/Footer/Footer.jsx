@@ -14,7 +14,7 @@ function Footer() {
                 <div className='flex flex-col justify-center'>
                     <p className='text-center text-sm text-slate-500 mt-3'>Contato:</p>
                     <div className='flex justify-center mt-2'>
-                            <a href="mailto:suporte@fitcal.app" className='text-center text-xs text-slate-500 mx-2 hover:underline'> fittcalapp@gmail.com </a>
+                            <a href="mailto:fittcalapp@gmail.com" className='text-center text-xs text-slate-500 mx-2 hover:underline'> fittcalapp@gmail.com </a>
                             <p className='text-center text-xs text-slate-500 mx-2'> +55 11 96853-3521</p>
                     </div>
                 </div>

@@ -21,7 +21,6 @@ function App() {
           element={
             <>
               <ControleCal />
-              <InfoPessoas />
               <div id="como-funciona">
                 <ComoFunciona />
               </div>
@@ -33,7 +32,7 @@ function App() {
           }
         />
         <Route path="/tos" element={<Termos />} />
-        <Route path="/privacy" element={<Privacidade />} />
+        <Route path="/privacidade" element={<Privacidade />} />
       </Routes>
       <Footer />
     </>

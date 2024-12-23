@@ -8,7 +8,7 @@ function Footer() {
                     Copyright © 2024 Fit Cal
                 </p>
                 <p className="text-center text-xs text-slate-500 mt-3">
-                    <Link to="/tos" className="mx-1 hover:underline">Termos de Serviço</Link> |
+                    <Link to="/termos" className="mx-1 hover:underline">Termos de Serviço</Link> |
                     <Link to="/privacidade" className="mx-1 hover:underline">Políticas de Privacidade</Link> 
                 </p>
                 <div className='flex flex-col justify-center'>

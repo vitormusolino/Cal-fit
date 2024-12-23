@@ -31,7 +31,7 @@ function App() {
             </>
           }
         />
-        <Route path="/tos" element={<Termos />} />
+        <Route path="/termos" element={<Termos />} />
         <Route path="/privacidade" element={<Privacidade />} />
       </Routes>
       <Footer />

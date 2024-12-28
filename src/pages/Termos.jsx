@@ -1,7 +1,22 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 function TermosCondicoes() {
+
+    const seo = (
+        <Helmet>
+            <title>Termos e Condições - FitCal</title>
+            <meta name="description" content="Confira os Termos e Condições do FitCal para entender as regras de uso, responsabilidades e direitos relacionados ao nosso serviço." />
+            <meta name="robots" content="index, follow" />
+            <link rel="canonical" href="https://fitcalai.app/termos" />
+        </Helmet>
+
+    );
+
     return (
+        <>
+        {seo}
+        
         <div className="container mx-auto px-6 py-8 max-w-4xl">
             <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900">
                 Termos e Condições do FitCal
@@ -117,6 +132,7 @@ function TermosCondicoes() {
                 <p className="text-center text-gray-700 mt-6">Obrigado por usar o FitCal!</p>
             </section>
         </div>
+        </>
     );
 }
 

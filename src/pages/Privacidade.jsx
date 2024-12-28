@@ -1,7 +1,21 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 function PoliticaPrivacidade() {
+    
+    const seo = (
+        <Helmet>
+            <title>Política de Privacidade - FitCal</title>
+            <meta name="description" content="Leia a nossa política de privacidade para entender como seus dados pessoais são coletados, usados e protegidos no FitCal." />
+            <meta name="robots" content="index, follow" />
+            <link rel="canonical" href="https://fitcalai.app/privacidade" />
+        </Helmet>
+    );
+
     return (
+        <>
+        {seo}
+
         <div className="container mx-auto px-6 py-8 max-w-4xl">
             <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900">
                 Política de Privacidade
@@ -134,6 +148,7 @@ function PoliticaPrivacidade() {
 
             <p className="text-center text-gray-700 mt-6">Obrigado por confiar no FitCal!</p>
         </div>
+        </>
     );
 }
 

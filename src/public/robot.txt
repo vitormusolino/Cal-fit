@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /privacidade
-Allow: /termos
-Sitemap: https://fitcalai.app/sitemap.xml

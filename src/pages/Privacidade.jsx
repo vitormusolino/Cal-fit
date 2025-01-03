@@ -8,7 +8,7 @@ function PoliticaPrivacidade() {
             <title>Política de Privacidade - FitCal</title>
             <meta name="description" content="Leia a nossa política de privacidade para entender como seus dados pessoais são coletados, usados e protegidos no FitCal." />
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://fitcalai.app/privacidade" />
+            <link rel="" href="https://fitcalai.app/privacidade" />
         </Helmet>
     );
 

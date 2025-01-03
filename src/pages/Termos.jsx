@@ -8,9 +8,8 @@ function TermosCondicoes() {
             <title>Termos e Condições - FitCal</title>
             <meta name="description" content="Confira os Termos e Condições do FitCal para entender as regras de uso, responsabilidades e direitos relacionados ao nosso serviço." />
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://fitcalai.app/termos" />
+            <link rel="" href="https://fitcalai.app/termos" />
         </Helmet>
-
     );
 
     return (

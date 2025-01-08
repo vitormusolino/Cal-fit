@@ -10,6 +10,7 @@ import Precisao from './components/Precisao/Precisao';
 
 import Termos from './pages/Termos'; 
 import Privacidade from './pages/Privacidade'; 
+import Contato from './pages/Contato'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         />
         <Route path="/termos" element={<Termos />} />
         <Route path="/privacidade" element={<Privacidade />} />
+        <Route path="/contato" element={<Contato />} />
       </Routes>
       <Footer />
     </>

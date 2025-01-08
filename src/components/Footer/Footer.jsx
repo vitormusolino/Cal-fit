@@ -14,6 +14,10 @@ function Footer() {
                 <Link to="/privacidade" className="mx-2 hover:underline">
                     Políticas de Privacidade
                 </Link>
+                |
+                <Link to="/contato" className="mx-2 hover:underline">
+                    Contato
+                </Link>
             </p>
             <div className="flex flex-col items-center mt-4">
                 <p className="text-center text-sm text-slate-500">

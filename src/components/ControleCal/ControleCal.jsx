@@ -1,6 +1,6 @@
 import BotaoIOS from '../../assets/BotaoIOS.png'
 import BotaoAndroid from '../../assets/BotaoAndroid.png'
-import ImgCelulares from '../../assets/ImgCelulares.png'
+import ImgCelulares from '../../assets/ImgCel.png'
 
 function ControleCal() {
     return ( 
